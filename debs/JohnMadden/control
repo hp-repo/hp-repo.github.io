@@ -1,9 +1,10 @@
 Package: com.hp-repo.johnmadden
 Name: John Madden!
-Version: 1.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: A John Madden Cydia icon. Using this as a placeholder theme.
 Author: HP-Repo
 Maintainer: HP-Repo
 Section: Themes
-Depends: winterboard, firmware (>=6.0)
+Depends: winterboard, firmware (>=6.0), com.codethemed.iconbundles
+Icon: file:///debs/images/JohnMadden.png
