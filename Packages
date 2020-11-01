@@ -6,10 +6,9 @@ Description: A John Madden Cydia icon. Using this as a placeholder theme.
 Maintainer: HP-Repo
 Author: HP-Repo
 Section: Themes
-Depends: winterboard, firmware (>=6.0), com.codethemed.iconbundles
+Depends: winterboard, com.codethemed.iconbundles, firmware (>=6.0)
 Filename: debs/JohnMadden.deb
-Icon: file:///debs/images/JohnMadden.png
 Size: 51392
-MD5sum: 13a39ed5b8dfe4f89beccc42e655eb1e
-SHA1: 209c01874059cecfa3c77eb21c3a0faa05272de2
-SHA256: a480777b62a69914d4ba444213faf302d6a2826008032683870740de5f6f2052
+MD5sum: 3b50134548e41891d4bd27a0f281841f
+SHA1: 31518c5f645d25093afc6ed95c4fd2fb47552c4d
+SHA256: bc7a5a341a335acad617cfe6b065e57f60c3871cca87af537b4b328c5cc23aca
