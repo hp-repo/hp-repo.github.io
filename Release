@@ -1,8 +1,8 @@
 Origin: HP Repo
-Label: hot pockets
+Label: The HP Repo
 Suite: stable 
 Version: 1.0 
 Codename: ios 
 Architectures: iphoneos-arm 
 Components: main
-Description: a cydia repo containing tweaks for iOS 6.
+Description: a cydia repo containing tweaks for iOS 6

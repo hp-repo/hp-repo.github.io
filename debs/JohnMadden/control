@@ -6,4 +6,4 @@ Description: A John Madden Cydia icon. Using this as a placeholder theme.
 Author: HP-Repo
 Maintainer: HP-Repo
 Section: Themes
-Depends: 
+Depends: winterboard, firmware (>=6.0)
