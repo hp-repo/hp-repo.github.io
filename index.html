@@ -7,6 +7,7 @@
     <style>
         body {
             background-color: black;
+            color: white;
         }
         h1 {
             margin-top: 50px;
@@ -23,22 +24,133 @@
         }
         .center {
             text-align: center;
+            margin-bottom: 30px;
         }
-        button {
+        a {
             background-color: black;
             border: 1px solid white;
             padding: 7px;
             color: white;
             outline: none;
+            text-decoration: none;
+        }
+        div.packages {
+            width: 300px;
+            height: 200px;
+            border-style: solid;
+            margin: auto;
+        }
+        div.package-list {
+            border-style: solid;
+            border-left: none;
+            width: 150px;
+            display: table-cell;
+            overflow: auto;
+            text-align: center;
+            margin: -100px;
+            position: relative;
+        }
+        button.package {
+            background-color: black;
+            color: white;
+            font-style: italic;
+            border: none;
+            outline: none;
+            position: absolute;
+            top: 10px;
+            left: 20%;
+        }
+        button.package:hover {
+            background-color: white;
+            color: black;
+        }
+        div.package-info {
+            border-style: solid;
+            border-left: none;
+            border-right: none;
+            display: table-cell;
+            bottom: 100px;
+            height: 167px;
+            overflow: auto;
+            text-align: center;
+        }
+        #johnmadden {
+            display: none;
+        }
+        button.title {
+            background-color: black;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            border: none;
+            outline: none;
+        }
+        div.title {
+            text-align: center;
+        }
+        #title-pixel {
+            margin-top: 50px;
+            margin-left: -10px;
+            display: none;
+            width: 157%;
+            height: 157%;
         }
     </style>
     <body>
-        <h1>HP REPO</h1>
-        <p><strong>a cydia repo for iOS 6 tweaks</strong></p>
+        <div class="title">
+            <button class="title" onclick="changeTitle()">
+                <h1 id="title">HP REPO</h1>
+                <img src="debs/images/HPREPO.png" id="title-pixel">
+            </button>
+        </div>
+        <p><strong>a cydia repo for iOS 6</strong></p>
         <div class="center">
-            <form action="http://cydia.saurik.com/api/share#?source=https://hp-repo.github.io">
-                <button>Open in Cydia</button>
-            </form>
+            <a href="http://cydia.saurik.com/api/share#?source=https://hp-repo.github.io">Open in Cydia</a>
+        </div>
+        <div class="packages">
+            <h3 style="margin: 0; padding: 5px; text-align: center;">Packages</h3>
+
+            <div class="package-list">
+                <button class="package" onclick="openPackage(event, 'johnmadden')">John Madden!</button>
+            </div>
+
+            <div class="package-info">
+                <div class="packageinfo" id="placeholder">
+                    <p style="margin: 10px;">Select a package from the left.</p>
+                </div>
+                <div class="packageinfo" id="johnmadden">
+                    <img src="debs/images/JohnMadden.png" width="50px" height="50px" style="margin: 10px;"></p>
+                    <p style="font-size: 15px; margin-top: -20px;"><strong>John Madden!</strong> is a theme for the Cydia icon, which replaces it with John Madden.</p>
+                </div>
+            </div>
         </div>
     </body>
+    <script>
+        function changeTitle() {
+            var a, b;
+            a = document.getElementById("title");
+            a.style.display = "none";
+            b = document.getElementById("title-pixel");
+            b.style.display = "block";
+        }
+        function openPackage(evt, packageName) {
+            // Declare all variables
+            var i, tabcontent, tablinks;
+
+            // Get all elements with class="tabcontent" and hide them
+            tabcontent = document.getElementsByClassName("packageinfo");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+            // Get all elements with class="tablinks" and remove the class "active"
+            tablinks = document.getElementsByClassName("package");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+
+            // Show the current tab, and add an "active" class to the button that opened the tab
+            document.getElementById(packageName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </html>
