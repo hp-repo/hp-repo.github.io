@@ -1,9 +1,10 @@
 Package: com.hp-repo.johnmadden
 Name: John Madden!
-Version: 1.1
+Version: 1.1.1
 Architecture: iphoneos-arm
-Description: A theme that replaces system icons (and more) with John Madden. Welcome to John Madden football.
+Description: A theme that replaces system icons (and more) with John Madden. Welcome to JOHN MADDEN football.
 Author: HP-Repo
 Maintainer: HP-Repo
 Section: Themes
 Depends: firmware (>=6.0)
+Icon: file:///Library/Themes/JohnMadden.png
