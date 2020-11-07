@@ -7,8 +7,9 @@ Maintainer: HP-Repo
 Author: HP-Repo
 Section: Themes
 Depends: winterboard
+Depiction: https://hp-repo.github.io/depictions/johnmadden.html
 Filename: debs/JohnMadden.deb
-Size: 3260156
-MD5sum: 1c4c3ca679b322fa709bc31310ad20b5
-SHA1: a73e66d82a940de335978e90ca69651f908455a3
-SHA256: 8a2d6e0fe1ee87b5ba73a1863598431bd16a0d209ec90cae95430b19b2f3dba1
+Size: 3260148
+MD5sum: c65118bc0da3f20c102c3f05ce0be65f
+SHA1: 4dcb49d5f94822d485a21c0c37f6c4e77f8be201
+SHA256: 4bc0abcdd8a43c9aeeed79c66f2bb64a4c5a80942e5939a8c3f314255ff4ac73
